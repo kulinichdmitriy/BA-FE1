@@ -1,4 +1,4 @@
-const data = [
+export const data = [
   {
     "_id": "5c94efcbe56094cefe59e8f9",
     "index": 0,
