@@ -1,0 +1,30 @@
+#root>div {
+  display: flex;
+}
+
+#sidebar {
+  min-width: 150px;
+}
+
+#sidebar img {
+  max-width: 100%;
+}
+
+#people {}
+
+#people li {
+  height: 50px;
+  display: flex;
+}
+
+#people li>div {}
+
+#people li>div.company {}
+
+#people li>div.balance {}
+
+#people li>div.picture {}
+
+#people li>div.picture img {
+  max-height: 100%;
+}
