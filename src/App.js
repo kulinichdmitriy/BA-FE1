@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./App.css";
+import "./App.scss";
 import { SideBar } from "./SideBar";
 import ListItem from "./ListItem";
 import { data } from "./data";
@@ -11,9 +11,9 @@ class App extends Component {
       activeItem: false
     };
   }
-  clickHandler(e) {
+  clickHandler(listItemData) {
     this.setState({
-      activeItem: e
+      activeItem: listItemData
     });
   }
   render() {
@@ -24,7 +24,7 @@ class App extends Component {
           {data.map(item => (
             <ListItem
               clickHandler={this.clickHandler.bind(this)}
-              dataItem={item}
+              dataItem={item}   
             />
           ))}
         </ul>

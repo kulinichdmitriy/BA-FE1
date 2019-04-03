@@ -2,9 +2,11 @@ import React, { Component } from "react";
 
 export class SideBar extends Component {
   render() {
-    
-    return <div id="sidebar">
-    <img src={this.props.activeItem.picture}/>
-    </div>;
+    console.log(this.props);
+    return (
+      <div id="sidebar">
+        <img alt="" src={this.props.activeItem.picture} />
+      </div>
+    );
   }
 }
